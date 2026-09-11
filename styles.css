@@ -573,7 +573,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 .trust-strip__logos span:hover { color: var(--teal-500); }
 
 /* ── SERVICES ─────────────────────────────────────────────── */
-.services { background: var(--canvas); }
+.services { background: var(--canvas); padding-top: var(--sp-3xl); }
 
 .cards-grid {
   display: grid;
@@ -1250,6 +1250,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   background: var(--white);
   overflow: hidden;
   position: relative;
+  padding-bottom: var(--sp-3xl);
 }
 .membership::before {
   content: '';
