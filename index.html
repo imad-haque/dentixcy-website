@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dentixcy — Modern Dental Care</title>
+  <link rel="icon" type="image/png" href="cleanlogo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo">
+        <img src="cleanlogo.png" alt="Dentixcy logo" class="nav__logo-img" />
+        Dentixcy
+      </a>
+      <ul class="nav__links">
+        <li><a href="#membership" class="nav__link--highlight">Membership</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#why">Why Us</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+      </ul>
+      <a href="https://wa.me/919811200260?text=Hi%2C%20I%27d%20like%20to%20book%20an%20appointment%20at%20Dentixcy" target="_blank" class="btn btn--pill btn--primary nav__cta">
+        Book Appointment
+      </a>
+      <button class="nav__hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="mobile-menu">
+      <ul>
+        <li><a href="#membership">Membership</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#why">Why Us</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+      </ul>
+      <a href="https://wa.me/919811200260?text=Hi%2C%20I%27d%20like%20to%20book%20an%20appointment%20at%20Dentixcy" target="_blank" class="btn btn--pill btn--primary">Book Appointment</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero__gradient-mesh" aria-hidden="true"></div>
+    <div class="hero__orb hero__orb--1" aria-hidden="true"></div>
+    <div class="hero__orb hero__orb--2" aria-hidden="true"></div>
+    <div class="hero__orb hero__orb--3" aria-hidden="true"></div>
+
+    <div class="hero__inner">
+      <div class="hero__badge reveal">
+        <span class="hero__badge-dot"></span>
+        Now accepting new patients
+      </div>
+      <a href="#membership" class="hero__membership-pill reveal reveal--delay-1" aria-label="View membership offer">
+        <span class="hero__membership-pill-tag">LIMITED OFFER</span>
+        <span class="hero__membership-pill-text">40% off every treatment · 3 members · only ₹249/yr</span>
+        <span class="hero__membership-pill-arrow">→</span>
+      </a>
+      <h1 class="hero__headline reveal reveal--delay-2">
+        Your smile deserves<br />
+        <em class="hero__headline-italic">expert hands.</em>
+      </h1>
+      <p class="hero__sub reveal reveal--delay-3">
+        Gentle, modern dentistry in a calm environment. We make every visit feel less like a clinic and more like a step toward confidence.
+      </p>
+      <div class="hero__actions reveal reveal--delay-4">
+        <a href="https://wa.me/919811200260?text=Hi%2C%20I%27d%20like%20to%20book%20an%20appointment%20at%20Dentixcy" target="_blank" class="btn btn--pill btn--primary btn--lg hero__cta-primary">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.555 4.122 1.528 5.862L.057 23.5l5.797-1.448A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.891 0-3.659-.5-5.193-1.378l-.371-.22-3.44.859.874-3.352-.242-.386A9.952 9.952 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+          Chat on WhatsApp
+        </a>
+        <a href="#services" class="btn btn--pill btn--ghost btn--lg">
+          Explore services
+        </a>
+      </div>
+      <div class="hero__stats reveal reveal--delay-4">
+        <div class="hero__stat">
+          <span class="hero__stat-num">2,400<span class="hero__stat-plus">+</span></span>
+          <span class="hero__stat-label">Happy patients</span>
+        </div>
+        <div class="hero__stat-divider"></div>
+        <div class="hero__stat">
+          <span class="hero__stat-num">12</span>
+          <span class="hero__stat-label">Years of experience</span>
+        </div>
+        <div class="hero__stat-divider"></div>
+        <div class="hero__stat">
+          <span class="hero__stat-num">4.9<span class="hero__stat-plus">★</span></span>
+          <span class="hero__stat-label">Average rating</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__scroll-hint" aria-hidden="true">
+      <span>scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- TRUST STRIP -->
+  <section class="trust-strip">
+    <div class="container">
+      <p class="trust-strip__label reveal">Trusted by patients from</p>
+      <div class="trust-strip__logos reveal reveal--delay-1">
+        <span>Delhi</span>
+        <span>Noida</span>
+        <span>Gurgaon</span>
+        <span>Faridabad</span>
+        <span>Greater Noida</span>
+        <span>Ghaziabad</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- MEMBERSHIP -->
+  <section class="section membership" id="membership">
+    <div class="container">
+      <div class="membership__layout">
+
+        <!-- Left: offer card -->
+        <div class="membership__card reveal" data-tilt>
+          <div class="membership__card-shine" aria-hidden="true"></div>
+          <div class="membership__card-header">
+            <span class="membership__card-logo">
+              <img src="cleanlogo.png" alt="" class="membership__card-logo-img" aria-hidden="true" /> DENTIXCY
+            </span>
+            <span class="membership__card-label">MEMBERSHIP CARD</span>
+          </div>
+          <div class="membership__card-offer">
+            <span class="membership__card-pct">40<span class="membership__card-pct-sym">%</span></span>
+            <span class="membership__card-off">OFF</span>
+          </div>
+          <p class="membership__card-tagline">on every treatment · for 1 full year</p>
+          <div class="membership__card-footer">
+            <div class="membership__card-members">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              3 Members
+            </div>
+            <div class="membership__card-price">@<span class="membership__card-rupee">₹</span>249<span class="membership__card-yr">/yr</span></div>
+          </div>
+        </div>
+
+        <!-- Right: details -->
+        <div class="membership__details">
+          <div class="reveal">
+            <span class="eyebrow">LIMITED TIME OFFER</span>
+            <h2 class="section__title membership__title">One card.<br />Complete care.</h2>
+            <p class="section__sub membership__sub">Cover your whole family's dental health for less than a coffee a month. 40% off every single treatment, zero hidden charges, for an entire year.</p>
+          </div>
+
+          <div class="membership__benefits reveal reveal--delay-1">
+            <div class="membership__benefit">
+              <span class="membership__benefit-icon">✓</span>
+              <div>
+                <strong>40% off every treatment</strong>
+                <span>Braces, implants, RCT, crowns, whitening — all covered</span>
+              </div>
+            </div>
+            <div class="membership__benefit">
+              <span class="membership__benefit-icon">✓</span>
+              <div>
+                <strong>3 family members, one card</strong>
+                <span>Use it for yourself, your spouse, your kids — no extra cost</span>
+              </div>
+            </div>
+            <div class="membership__benefit">
+              <span class="membership__benefit-icon">✓</span>
+              <div>
+                <strong>No cost EMI available</strong>
+                <span>Easy payments, zero interest — because better care shouldn't wait</span>
+              </div>
+            </div>
+            <div class="membership__benefit">
+              <span class="membership__benefit-icon">✓</span>
+              <div>
+                <strong>Transparent, no hidden charges</strong>
+                <span>100% honest billing. What we quote is what you pay.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="membership__cta reveal reveal--delay-2">
+            <a href="https://wa.me/919811200260?text=Hi%2C%20I%27m%20interested%20in%20the%20Dentixcy%20Membership%20Card%20at%20%E2%82%B9249" target="_blank" class="btn btn--pill btn--primary btn--lg">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.555 4.122 1.528 5.862L.057 23.5l5.797-1.448A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.891 0-3.659-.5-5.193-1.378l-.371-.22-3.44.859.874-3.352-.242-.386A9.952 9.952 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+              Get my card for ₹249
+            </a>
+            <p class="membership__cta-note">Message us on WhatsApp — we'll set it up in minutes.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="eyebrow">WHAT WE OFFER</span>
+        <h2 class="section__title">Complete care,<br />under one roof.</h2>
+        <p class="section__sub">From a routine clean to a full smile transformation — we handle every stage of your dental health.</p>
+      </div>
+
+      <div class="cards-grid">
+        <div class="card card--3d" data-tilt>
+          <div class="card__icon-wrap card__icon-wrap--teal">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0112 2a8 8 0 018 8.2c0 7.3-8 11.8-8 11.8z"/></svg>
+          </div>
+          <h3 class="card__title">General Dentistry</h3>
+          <p class="card__body">Check-ups, cleanings, fillings, and X-rays. The foundation of a healthy mouth, delivered with care.</p>
+          <a href="https://wa.me/919811200260?text=Hi%2C%20I%27m%20interested%20in%20General%20Dentistry" target="_blank" class="card__link">Book now →</a>
+        </div>
+
+        <div class="card card--3d card--featured" data-tilt>
+          <div class="card__badge">Most popular</div>
+          <div class="card__icon-wrap card__icon-wrap--white">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+          </div>
+          <h3 class="card__title">Teeth Whitening</h3>
+          <p class="card__body">Professional in-chair whitening that lifts stains and brightens your smile by several shades — safely.</p>
+          <a href="https://wa.me/919811200260?text=Hi%2C%20I%27m%20interested%20in%20Teeth%20Whitening" target="_blank" class="card__link">Book now →</a>
+        </div>
+
+        <div class="card card--3d" data-tilt>
+          <div class="card__icon-wrap card__icon-wrap--teal">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 13h4"/></svg>
+          </div>
+          <h3 class="card__title">Dental Implants</h3>
+          <p class="card__body">Permanent, natural-looking replacements for missing teeth. Restored function and confidence in one solution.</p>
+          <a href="https://wa.me/919811200260?text=Hi%2C%20I%27m%20interested%20in%20Dental%20Implants" target="_blank" class="card__link">Book now →</a>
+        </div>
+
+        <div class="card card--3d" data-tilt>
+          <div class="card__icon-wrap card__icon-wrap--teal">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3 class="card__title">Orthodontics</h3>
+          <p class="card__body">Braces and clear aligners to straighten teeth at any age. Subtle options available for adults.</p>
+          <a href="https://wa.me/919811200260?text=Hi%2C%20I%27m%20interested%20in%20Orthodontics" target="_blank" class="card__link">Book now →</a>
+        </div>
+
+        <div class="card card--3d" data-tilt>
+          <div class="card__icon-wrap card__icon-wrap--teal">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+          </div>
+          <h3 class="card__title">Cosmetic Dentistry</h3>
+          <p class="card__body">Veneers, bonding, and smile makeovers. Reshape your smile to match the way you feel inside.</p>
+          <a href="https://wa.me/919811200260?text=Hi%2C%20I%27m%20interested%20in%20Cosmetic%20Dentistry" target="_blank" class="card__link">Book now →</a>
+        </div>
+
+        <div class="card card--3d" data-tilt>
+          <div class="card__icon-wrap card__icon-wrap--teal">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>
+          </div>
+          <h3 class="card__title">Emergency Care</h3>
+          <p class="card__body">Toothache, broken tooth, or sudden sensitivity — we're available for same-day emergency appointments.</p>
+          <a href="https://wa.me/919811200260?text=Hi%2C%20I%20have%20a%20dental%20emergency" target="_blank" class="card__link">Contact now →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section class="section why" id="why">
+    <div class="container">
+      <div class="why__layout">
+        <div class="why__left reveal">
+          <span class="eyebrow">WHY DENTIXCY</span>
+          <h2 class="section__title">Dentistry built around you,<br />not the other way around.</h2>
+          <p class="section__sub">Most dental visits feel rushed. Ours don't. Every appointment begins with a conversation, not a clipboard.</p>
+          <a href="https://wa.me/919811200260?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20Dentixcy" target="_blank" class="btn btn--pill btn--primary">Talk to us on WhatsApp</a>
+        </div>
+        <div class="why__right">
+          <div class="why__feature reveal reveal--delay-1">
+            <div class="why__feature-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div>
+              <h4>Pain-free procedures</h4>
+              <p>Modern anaesthesia techniques that make even the most complex treatments comfortable.</p>
+            </div>
+          </div>
+          <div class="why__feature reveal reveal--delay-2">
+            <div class="why__feature-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div>
+              <h4>Digital X-rays & scanning</h4>
+              <p>90% lower radiation than conventional X-rays, with instant high-resolution imaging.</p>
+            </div>
+          </div>
+          <div class="why__feature reveal reveal--delay-3">
+            <div class="why__feature-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div>
+              <h4>Flexible scheduling</h4>
+              <p>Early morning and evening slots available. WhatsApp us to book at your convenience.</p>
+            </div>
+          </div>
+          <div class="why__feature reveal reveal--delay-4">
+            <div class="why__feature-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div>
+              <h4>Transparent pricing</h4>
+              <p>No surprise bills. We walk you through costs before any treatment begins.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="section process" id="process">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="eyebrow">HOW IT WORKS</span>
+        <h2 class="section__title">From first message<br />to healthy smile.</h2>
+      </div>
+      <div class="process__steps">
+        <div class="process__step reveal reveal--delay-1">
+          <div class="process__step-num">01</div>
+          <div class="process__step-content">
+            <h3>Send a WhatsApp</h3>
+            <p>Message us on WhatsApp with your concern or preferred date. We respond within minutes.</p>
+          </div>
+          <div class="process__step-connector" aria-hidden="true"></div>
+        </div>
+        <div class="process__step reveal reveal--delay-2">
+          <div class="process__step-num">02</div>
+          <div class="process__step-content">
+            <h3>Come in for a consultation</h3>
+            <p>Meet the doctor, get a thorough exam and X-ray, and receive a clear treatment plan with costs upfront.</p>
+          </div>
+          <div class="process__step-connector" aria-hidden="true"></div>
+        </div>
+        <div class="process__step reveal reveal--delay-3">
+          <div class="process__step-num">03</div>
+          <div class="process__step-content">
+            <h3>Get treated, feel better</h3>
+            <p>Treatment at your pace. Follow-up care and aftercare instructions sent directly to your WhatsApp.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section testimonials" id="testimonials">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="eyebrow">PATIENT REVIEWS</span>
+        <h2 class="section__title">Straight from<br />the chair.</h2>
+      </div>
+      <div class="testimonials__grid">
+        <div class="testimonial-card reveal reveal--delay-1" data-tilt>
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p class="testimonial-card__quote">"I used to dread the dentist. After my first visit at Dentixcy, that completely changed. The doctor is incredibly calm and explains everything before doing it."</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">RK</div>
+            <div>
+              <strong>Rahul K.</strong>
+              <span>Delhi</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card testimonial-card--featured reveal reveal--delay-2" data-tilt>
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p class="testimonial-card__quote">"Got my veneers done here and the result is beyond what I expected. My smile looks completely natural. Worth every rupee."</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">PS</div>
+            <div>
+              <strong>Priya S.</strong>
+              <span>Noida</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal reveal--delay-3" data-tilt>
+          <div class="testimonial-card__quote-mark">"</div>
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p class="testimonial-card__quote">"Same-day appointment for my emergency. Cracked tooth sorted in under an hour. Painless and professional — cannot recommend highly enough."</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">AM</div>
+            <div>
+              <strong>Arjun M.</strong>
+              <span>Gurgaon</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <section class="cta-band">
+    <div class="cta-band__glow" aria-hidden="true"></div>
+    <div class="container">
+      <div class="cta-band__inner reveal">
+        <span class="eyebrow eyebrow--light">GET STARTED TODAY</span>
+        <h2 class="cta-band__title">Ready for a smile you're proud of?</h2>
+        <p class="cta-band__sub">One WhatsApp message is all it takes. We'll help you figure out the rest.</p>
+        <a href="https://wa.me/919811200260?text=Hi%2C%20I%27d%20like%20to%20book%20an%20appointment%20at%20Dentixcy" target="_blank" class="btn btn--pill btn--white btn--lg cta-band__btn">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.555 4.122 1.528 5.862L.057 23.5l5.797-1.448A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.891 0-3.659-.5-5.193-1.378l-.371-.22-3.44.859.874-3.352-.242-.386A9.952 9.952 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+          Message us on WhatsApp
+        </a>
+        <p class="cta-band__note">+91 98112 00260 · Available Mon – Sat, 9am – 8pm</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="#" class="nav__logo footer__logo">
+            <img src="cleanlogo.png" alt="Dentixcy logo" class="nav__logo-img nav__logo-img--footer" />
+            Dentixcy
+          </a>
+          <p>Modern dental care delivered with<br />precision, patience, and warmth.</p>
+          <a href="https://wa.me/919811200260" target="_blank" class="footer__wa">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.555 4.122 1.528 5.862L.057 23.5l5.797-1.448A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.891 0-3.659-.5-5.193-1.378l-.371-.22-3.44.859.874-3.352-.242-.386A9.952 9.952 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+            +91 98112 00260
+          </a>
+        </div>
+        <div class="footer__col">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="https://wa.me/919811200260?text=General+Dentistry" target="_blank">General Dentistry</a></li>
+            <li><a href="https://wa.me/919811200260?text=Teeth+Whitening" target="_blank">Teeth Whitening</a></li>
+            <li><a href="https://wa.me/919811200260?text=Dental+Implants" target="_blank">Dental Implants</a></li>
+            <li><a href="https://wa.me/919811200260?text=Orthodontics" target="_blank">Orthodontics</a></li>
+            <li><a href="https://wa.me/919811200260?text=Cosmetic+Dentistry" target="_blank">Cosmetic Dentistry</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h5>Quick links</h5>
+          <ul>
+            <li><a href="#why">Why Dentixcy</a></li>
+            <li><a href="#process">How it works</a></li>
+            <li><a href="#testimonials">Patient reviews</a></li>
+            <li><a href="https://wa.me/919811200260?text=Emergency+appointment" target="_blank">Emergency care</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h5>Hours</h5>
+          <ul class="footer__hours">
+            <li><span>Mon – Fri</span><span>9:00 am – 8:00 pm</span></li>
+            <li><span>Saturday</span><span>10:00 am – 6:00 pm</span></li>
+            <li><span>Sunday</span><span>Closed</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 Dentixcy. All rights reserved.</span>
+        <span>Designed with care for your smile.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp button -->
+  <a href="https://wa.me/919811200260?text=Hi%2C%20I%27d%20like%20to%20book%20an%20appointment%20at%20Dentixcy" target="_blank" class="wa-float" aria-label="Chat on WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.555 4.122 1.528 5.862L.057 23.5l5.797-1.448A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.891 0-3.659-.5-5.193-1.378l-.371-.22-3.44.859.874-3.352-.242-.386A9.952 9.952 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+    <span class="wa-float__pulse"></span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
