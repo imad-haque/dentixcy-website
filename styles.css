@@ -1561,3 +1561,113 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   flex-shrink: 0;
   filter: brightness(0) invert(1) opacity(0.9);
 }
+
+/* ============================================================
+   USP BAND — Home dental care
+   ============================================================ */
+.usp-band {
+  position: relative;
+  background: var(--grad-cta);
+  overflow: hidden;
+  padding-block: var(--sp-3xl);
+}
+
+.usp-band__glow {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 55% 120% at 0% 50%,  rgba(94,234,212,0.15) 0%, transparent 55%),
+    radial-gradient(ellipse 40% 80% at 100% 50%, rgba(20,184,166,0.12) 0%, transparent 55%);
+  pointer-events: none;
+}
+
+.usp-band__inner {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: var(--sp-xl);
+}
+
+.usp-band__icon {
+  flex-shrink: 0;
+  width: 72px;
+  height: 72px;
+  background: rgba(255,255,255,0.10);
+  border: 1.5px solid rgba(255,255,255,0.18);
+  border-radius: var(--r-xl);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  backdrop-filter: blur(4px);
+}
+
+.usp-band__text {
+  min-width: 0;
+}
+
+.usp-band__label {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--teal-200);
+  margin-bottom: 8px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: var(--r-pill);
+  padding: 3px 10px;
+}
+
+.usp-band__title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  font-weight: 400;
+  color: var(--white);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin-bottom: 10px;
+}
+.usp-band__title em {
+  font-style: italic;
+  color: var(--teal-200);
+}
+
+.usp-band__sub {
+  font-size: 15px;
+  color: rgba(255,255,255,0.70);
+  line-height: 1.65;
+  max-width: 520px;
+}
+
+.usp-band__cta {
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+@media (max-width: 900px) {
+  .usp-band__inner {
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
+  }
+  .usp-band__cta {
+    grid-column: span 2;
+    justify-self: start;
+  }
+}
+
+@media (max-width: 560px) {
+  .usp-band__inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .usp-band__icon { margin-inline: auto; }
+  .usp-band__sub { margin-inline: auto; }
+  .usp-band__cta {
+    grid-column: auto;
+    justify-self: center;
+  }
+}
