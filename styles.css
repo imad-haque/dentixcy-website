@@ -404,9 +404,43 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 .hero__inner {
   position: relative;
   z-index: 1;
-  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: var(--sp-3xl);
+  width: min(1180px, 100%);
   padding: var(--sp-4xl) var(--sp-xl);
-  max-width: 760px;
+}
+
+.hero__left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+/* Left side — override centred defaults */
+.hero__left .hero__headline { text-align: left; }
+.hero__left .hero__sub      { text-align: left; margin-inline: 0; }
+.hero__left .hero__actions  { justify-content: flex-start; }
+.hero__left .hero__stats    { margin-inline: 0; }
+
+.hero__right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--sp-lg);
+}
+
+.hero__card {
+  width: 100%;
+  max-width: 340px;
+}
+
+.hero__card-cta {
+  width: 100%;
+  max-width: 340px;
+  justify-content: center;
 }
 
 .hero__badge {
@@ -1142,7 +1176,18 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   .nav__cta { display: none; }
   .nav__hamburger { display: flex; }
 
-  .hero__inner { padding: var(--sp-xl); }
+  /* Hero goes back to single column, centred */
+  .hero__inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .hero__left { align-items: center; text-align: center; }
+  .hero__left .hero__headline { text-align: center; }
+  .hero__left .hero__sub      { text-align: center; margin-inline: auto; }
+  .hero__left .hero__actions  { justify-content: center; }
+  .hero__left .hero__stats    { margin-inline: auto; }
+  .hero__right { display: none; } /* hide card on mobile — still visible in membership section */
+
   .hero__stats {
     gap: var(--sp-md);
     padding: var(--sp-md) var(--sp-lg);
