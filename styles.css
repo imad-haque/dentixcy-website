@@ -1406,6 +1406,60 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   text-align: right;
 }
 
+.membership__card-pricing {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  line-height: 1;
+  margin-bottom: 8px;
+  position: relative;
+  z-index: 1;
+  flex-wrap: wrap;
+}
+
+.membership__card-old-price {
+  font-family: var(--font-sans);
+  font-size: 30px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.45);
+  line-height: 1;
+}
+
+.membership__card-old-price s {
+  text-decoration: line-through;
+  text-decoration-color: #e8c24a;
+  text-decoration-thickness: 2.5px;
+}
+
+.membership__card-new-price {
+  font-family: var(--font-sans);
+  font-size: 58px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  background: linear-gradient(135deg, #e8c24a, #f5d97a, #c9a427);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+  display: inline-flex;
+  align-items: baseline;
+}
+
+.membership__card-new-price .membership__card-rupee {
+  font-size: 38px;
+  font-weight: 700;
+  margin-right: 1px;
+}
+
+.membership__card-new-price .membership__card-yr {
+  font-size: 20px;
+  font-weight: 600;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0.55);
+  letter-spacing: 0;
+  margin-left: 2px;
+}
+
+
 .membership__card-offer {
   display: flex;
   align-items: flex-start;
@@ -1414,6 +1468,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   position: relative;
   z-index: 1;
 }
+
 .membership__card-pct {
   font-family: var(--font-sans);
   font-size: 96px;
@@ -1455,7 +1510,8 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   position: relative;
   z-index: 1;
 }
-.membership__card-members {
+.membership__card-members,
+.membership__card-validity {
   display: flex;
   align-items: center;
   gap: 7px;
@@ -1554,6 +1610,11 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 
 @media (max-width: 480px) {
   .membership__card-pct { font-size: 72px; }
+  .membership__card-pricing { gap: 10px; }
+  .membership__card-old-price { font-size: 24px; }
+  .membership__card-new-price { font-size: 44px; }
+  .membership__card-new-price .membership__card-rupee { font-size: 28px; }
+  .membership__card-new-price .membership__card-yr { font-size: 16px; }
   .hero__membership-pill-text { font-size: 12px; }
 }
 
@@ -1715,5 +1776,351 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   .usp-band__cta {
     grid-column: auto;
     justify-self: center;
+  }
+}
+
+/* ============================================================
+   SERVICE PAGE SPECIFIC STYLES
+   ============================================================ */
+
+/* ── Service Hero ─────────────────────────────────────────── */
+.service-hero {
+  min-height: 80vh;
+  padding-top: 68px;
+}
+
+.service-hero__inner {
+  grid-template-columns: 1fr;
+  text-align: center;
+  padding: var(--sp-4xl) var(--sp-xl) var(--sp-3xl);
+}
+
+.service-hero .hero__left {
+  align-items: center;
+  text-align: center;
+}
+
+.service-hero__headline {
+  text-align: center;
+  max-width: 800px;
+  margin-inline: auto;
+}
+
+.service-hero .hero__sub {
+  text-align: center;
+  margin-inline: auto;
+  max-width: 680px;
+}
+
+.service-hero .hero__actions {
+  justify-content: center;
+}
+
+/* ── Breadcrumb ───────────────────────────────────────────── */
+.breadcrumb-section {
+  padding-block: var(--sp-lg);
+  background: var(--white);
+  border-bottom: 1px solid var(--hairline);
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-sm);
+  flex-wrap: wrap;
+  font-size: 14px;
+  color: var(--body);
+}
+
+.breadcrumb a {
+  color: var(--teal-600);
+  transition: color 0.2s ease;
+}
+
+.breadcrumb a:hover {
+  color: var(--teal-700);
+}
+
+.breadcrumb__separator {
+  color: var(--mute);
+  font-size: 12px;
+}
+
+.breadcrumb__current {
+  color: var(--ink);
+  font-weight: 500;
+}
+
+/* ── Service Intro ────────────────────────────────────────── */
+.service-intro {
+  background: var(--white);
+  padding-top: var(--sp-3xl);
+}
+
+.service-intro__layout {
+  max-width: 900px;
+  margin-inline: auto;
+}
+
+.service-intro__content .section__title {
+  text-align: left;
+  margin-bottom: var(--sp-lg);
+}
+
+.service-intro__text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-lg);
+}
+
+.service-intro__text p {
+  font-size: 17px;
+  color: var(--body);
+  line-height: 1.7;
+}
+
+/* ── Symptoms Section ─────────────────────────────────────── */
+.symptoms-section {
+  background: var(--canvas);
+}
+
+/* ── Service Note ─────────────────────────────────────────── */
+.service-note {
+  background: var(--teal-50);
+  border: 1px solid var(--teal-200);
+  border-left: 4px solid var(--teal-500);
+  border-radius: var(--r-md);
+  padding: var(--sp-lg);
+  display: flex;
+  align-items: flex-start;
+  gap: var(--sp-md);
+  margin-top: var(--sp-2xl);
+  max-width: 900px;
+  margin-inline: auto;
+}
+
+.service-note__icon {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  color: var(--teal-600);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2px;
+}
+
+.service-note p {
+  font-size: 15px;
+  color: var(--body);
+  line-height: 1.65;
+  margin: 0;
+}
+
+.service-note strong {
+  color: var(--ink);
+  font-weight: 700;
+}
+
+/* ── FAQs Section ─────────────────────────────────────────── */
+.faqs-section {
+  background: var(--white);
+}
+
+.faqs-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--sp-lg);
+  max-width: 900px;
+  margin-inline: auto;
+}
+
+.faq-card {
+  background: var(--canvas);
+  border: 1px solid var(--hairline);
+  border-radius: var(--r-lg);
+  padding: var(--sp-xl);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s var(--ease-out);
+}
+
+.faq-card:hover {
+  border-color: var(--teal-300);
+  box-shadow: var(--shadow-teal);
+  transform: translateY(-2px);
+}
+
+.faq-card__question {
+  font-family: var(--font-sans);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--ink);
+  letter-spacing: -0.02em;
+  margin-bottom: var(--sp-md);
+  line-height: 1.4;
+}
+
+.faq-card__answer {
+  font-size: 15px;
+  color: var(--body);
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ── Location CTA Section ─────────────────────────────────── */
+.location-cta-section {
+  background: var(--canvas);
+  padding-bottom: var(--sp-4xl);
+}
+
+.location-cta {
+  background: var(--grad-cta);
+  border-radius: var(--r-xl);
+  padding: var(--sp-3xl) var(--sp-2xl);
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+
+.location-cta::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 70% 80% at 50% -20%, rgba(94,234,212,0.15) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 50% at 80% 80%,  rgba(20,184,166,0.10) 0%, transparent 55%);
+  pointer-events: none;
+}
+
+.location-cta__content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  max-width: 700px;
+  margin-inline: auto;
+}
+
+.location-cta__content .section__title {
+  color: var(--white);
+  margin-bottom: var(--sp-md);
+}
+
+.location-cta__text {
+  font-size: 17px;
+  color: rgba(255,255,255,0.80);
+  line-height: 1.7;
+  margin-bottom: var(--sp-2xl);
+}
+
+.location-cta__details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--sp-xl);
+  margin-bottom: var(--sp-2xl);
+  text-align: left;
+}
+
+.location-cta__detail {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--sp-md);
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: var(--r-md);
+  padding: var(--sp-lg);
+  backdrop-filter: blur(4px);
+}
+
+.location-cta__detail svg {
+  flex-shrink: 0;
+  color: var(--teal-200);
+  margin-top: 2px;
+}
+
+.location-cta__detail strong {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--teal-200);
+  margin-bottom: 6px;
+}
+
+.location-cta__detail span {
+  font-size: 14px;
+  color: rgba(255,255,255,0.85);
+  line-height: 1.6;
+}
+
+.location-cta__detail a {
+  color: rgba(255,255,255,0.85);
+  transition: color 0.2s ease;
+}
+
+.location-cta__detail a:hover {
+  color: var(--white);
+}
+
+.location-cta__actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--sp-md);
+  flex-wrap: wrap;
+}
+
+/* ── Responsive Adjustments ───────────────────────────────── */
+@media (max-width: 768px) {
+  .service-hero {
+    min-height: 70vh;
+  }
+
+  .service-hero__inner {
+    padding: var(--sp-3xl) var(--sp-xl) var(--sp-2xl);
+  }
+
+  .service-intro__content .section__title {
+    text-align: center;
+  }
+
+  .location-cta {
+    padding: var(--sp-2xl) var(--sp-lg);
+  }
+
+  .location-cta__details {
+    grid-template-columns: 1fr;
+    gap: var(--sp-md);
+  }
+
+  .location-cta__actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .location-cta__actions .btn {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .breadcrumb {
+    font-size: 13px;
+  }
+
+  .service-note {
+    flex-direction: column;
+    gap: var(--sp-sm);
+  }
+
+  .faq-card {
+    padding: var(--sp-lg);
+  }
+
+  .faq-card__question {
+    font-size: 16px;
+  }
+
+  .faq-card__answer {
+    font-size: 14px;
   }
 }
